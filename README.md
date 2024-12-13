@@ -7,7 +7,7 @@ This repo provides a setup for deploying a centralized MLflow Tracking Server. T
 - Backend Storage: Use PostgreSQL to store experiment metadata.
 - Authentication: Basic authentication is enabled to restrict access to authorized users.
 
-# Architecture:
+# Architecture
 ![Architecture Diagram](docs/architecture.png)
 
 # Setup Instructions
@@ -19,9 +19,3 @@ Run the following command to start the MLflow server, PostgreSQL, and MinIO
 ```bash
 docker-compose up -d
 ```
-
-## Requirements
-1. Users can upload model artifacts to mlflow
-1. Users can utilize mlflow for experiment tracking
-1. Multiple teams can share the same mlflow service for managing the ML lifecycle
-1. Users need to be authenticated to view any resources from the server
